@@ -1,7 +1,11 @@
-#ifndef _StartMenu_H_
-#define _StartMenu_H_
-class StartMenu : public cocos2d::CCLayer
+#pragma once
+
+class startmenu : public cocos2d::CCLayer
 {
-	static cocos2d
+	public:
+		static cocos2d::CCScene* scene();
+		virtual bool init();
+		void menuCallback(cocos2d::Ref*pSender);
+		CREATE_FUNC(startmenu);
+	private:
 };
-#endif
