@@ -1,14 +1,27 @@
 ﻿#ifndef __DungeonScene1_H__
 #define __DungeonScene1_H__
+#include"Box2D\Box2D.h"
+#include"B2Sprite.h"
 
 class DungeonScene1: public cocos2d::CCLayer
 {
 public:
 	static cocos2d::CCScene* Scene1();//创建菜单场景
-	//virtual bool init();//初始化菜单类的成员变量
-	//void menuCallback(CCObject *pSender);//回调函数，这个在点击菜单项的时候会用到回调机制，调用该函数
+	virtual bool init();//初始化菜单类的成员变量
+	void menuCallback(Ref*pSender);//回调函数，这个在点击菜单项的时候会用到回调机制，调用该函数
 	CREATE_FUNC(DungeonScene1);//这个函数有点麻烦，就暂时当作是一个自动释放内存的函数（很重要，教程一不会用到，后面慢慢讲）
+
+	virtual void update(float dt);
+	b2World *world1;
+	B2Sprite *bird;
+	CCSize screenSize;
+
+	
+
 private:
+	void addBird();
+	void addGround();
+	void initWorld();
 
 };
 #endif // !__StartMenu_H__
