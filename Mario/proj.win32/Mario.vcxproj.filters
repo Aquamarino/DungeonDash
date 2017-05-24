@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\Classes\MenuScene.cpp">
+      <Filter>Mario\场景</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FirstScene.cpp">
+      <Filter>Mario\场景</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Player.cpp">
+      <Filter>Mario\实体\玩家</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Coin.cpp">
+      <Filter>Mario\实体\金币</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Mushroom.cpp">
+      <Filter>Mario\实体\敌人</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Flower.cpp">
+      <Filter>Mario\实体\敌人</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Tortoise.cpp">
+      <Filter>Mario\实体\敌人</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Entity.cpp">
+      <Filter>Mario\实体</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="..\Classes\MenuScene.h">
+      <Filter>Mario\场景</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FirstScene.h">
+      <Filter>Mario\场景</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player.h">
+      <Filter>Mario\实体\玩家</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Coin.h">
+      <Filter>Mario\实体\金币</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Mushroom.h">
+      <Filter>Mario\实体\敌人</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Flower.h">
+      <Filter>Mario\实体\敌人</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Tortoise.h">
+      <Filter>Mario\实体\敌人</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Entity.h">
+      <Filter>Mario\实体</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Mario">
+      <UniqueIdentifier>{7d94b897-23d3-4d59-bade-824c051d5b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mario\场景">
+      <UniqueIdentifier>{957c8d41-2d32-4fd8-9e0a-3413734b2034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mario\实体">
+      <UniqueIdentifier>{06f957cb-8e98-4786-badd-8a5990902441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mario\实体\敌人">
+      <UniqueIdentifier>{b53206f3-b89a-45e9-87d3-289fa2a182c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mario\实体\金币">
+      <UniqueIdentifier>{74733e25-89a6-4962-8802-40e066fbddbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mario\实体\玩家">
+      <UniqueIdentifier>{2c5f4973-53dd-4f60-9917-c4117ab3dfb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mario\管理器">
+      <UniqueIdentifier>{bb617864-cd7a-4a96-bc46-54d54f4440ad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
